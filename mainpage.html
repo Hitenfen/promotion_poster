@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Not a Robot, I Promise</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import a fun, handwritten-style font */
+        @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Caveat:wght@700&display=swap');
+        
+        body {
+            font-family: 'Gochi Hand', cursive;
+        }
+        .caveat-font {
+            font-family: 'Caveat', cursive;
+        }
+
+        
+
+        /* Simple wiggle animation for the button */
+        @keyframes wiggle {
+            0%, 7% {
+                transform: rotateZ(0);
+            }
+            15% {
+                transform: rotateZ(-5deg);
+            }
+            20% {
+                transform: rotateZ(5deg);
+            }
+            25% {
+                transform: rotateZ(-5deg);
+            }
+            30% {
+                transform: rotateZ(5deg);
+            }
+            35% {
+                transform: rotateZ(-2deg);
+            }
+            40% {
+                transform: rotateZ(2deg);
+            }
+            45%, 100% {
+                transform: rotateZ(0);
+            }
+        }
+        
+        .wiggling-button:hover {
+            animation: wiggle 0.8s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-[#e2f9ee] min-h-screen flex items-center justify-center p-6">
+    <!-- Main poster container with a goofy paper-like feel -->
+    <div class="max-w-xl w-full bg-white rounded-[2rem] p-8 md:p-12 shadow-2xl border-4 border-dashed border-gray-400 transform -rotate-2">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="caveat-font text-5xl md:text-6xl text-gray-800 leading-tight">
+                Your Next Google Ambassador
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mt-2">
+                I'm just a human who's really good at what I do
+            </p>
+        </header>
+
+        <!-- Profile Picture and Summary Section -->
+        <div class="flex flex-col items-center mb-8">
+            <!-- Your uploaded picture with a fun, sticker-like border -->
+            <div class="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-8 border-yellow-300 shadow-md transform rotate-6">
+                <img src="assets/me formal.jpeg" 
+                     alt="Hiten Tanwar" 
+                     class="w-full h-full object-cover">
+            </div>
+            
+            <p class="text-lg md:text-xl text-gray-700 text-center px-4">
+                I'm passionate about technology and community, and I'm confident that my skills in community building and problem solving will make me a successful representative for Google.
+            </p>
+        </div>
+
+        <!-- Key Skills as 'Reasons to Hire Me' -->
+        <section class="mb-8">
+            <h3 class="caveat-font text-3xl font-bold mb-4 text-center text-gray-800" font-family: 'Inter', sans-serif;>
+                My Core Strengths 
+            </h3>
+            <ul class="list-none space-y-4">
+                <!-- Reason 1 -->
+                <li class="flex items-center space-x-3 bg-blue-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl" role="img" aria-label="lightbulb">💡</span>
+                    <p class="text-gray-700">I am an innovative thinker who can generate fresh ideas to solve challenges and create impactful campaigns.</p>
+                </li>
+                <!-- Reason 2 -->
+                <li class="flex items-center space-x-3 bg-green-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl" role="img" aria-label="muscle">💪</span>
+                    <p class="text-gray-700">My organizational skills are so sharp, I can plan a campus-wide event with just a notebook and a smile.</p>
+                </li>
+                <!-- Reason 3 -->
+                <li class="flex items-center space-x-3 bg-red-100 p-4 rounded-xl shadow-sm">
+                    <span class="text-2xl" role="img" aria-label="sparkles">✨</span>
+                    <p class="text-gray-700">My creativity isn't just about big ideas; it's about finding unique ways to connect with my peers and build a strong community.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <p class="text-xl md:text-2xl text-gray-700 mb-6">
+                I'm looking forward to a conversation—no awkwardness, I promise.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2 mt-8 text-gray-600 font-medium">
+                <a href="mailto:tanwarhiten05@gmail.com" class="hover:text-blue-600 transition-colors duration-200">
+                    <span class="font-bold">Email:</span> tanwarhiten05@gmail.com
+                </a>
+                <span class="hidden md:inline">|</span>
+                <a href="https://www.linkedin.com/in/hiten-tanwar-5aa350356/" class="hover:text-blue-600 transition-colors duration-200">
+                    <span class="font-bold">LinkedIn:</span> Hiten Tanwar
+                </a>
+           
+        </section>
+
+    </div>
+</body>
+</html>
